@@ -29,7 +29,9 @@ mongoose.connect(
 ).then(() => {
     console.log('Database connected Successfully!');
 })
-app.use(cors());
+app.use(cors({
+    origin: 'https://flipkart-clone-frontend-app.herokuapp.com'
+}));
 app.use(express.json());
 
 app.use("/public", express.static(path.join(__dirname, "uploads")));
