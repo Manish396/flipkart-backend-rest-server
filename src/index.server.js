@@ -30,7 +30,7 @@ mongoose.connect(
     console.log('Database connected Successfully!');
 })
 app.use(cors({
-    origin: 'https://flipkart-clone-frontend-app.herokuapp.com'
+    origin: 'https://flipkart-backend-application.herokuapp.com'
 }));
 app.use(express.json());
 
